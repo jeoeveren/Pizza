@@ -1,10 +1,12 @@
 # pizza.rb
 
 class Pizza
-  attr_accessor :brand, :model, :passengers
+  attr_accessor :number, :name, :ingredients, :price
 
-  def initialize(brand, model)
-    @brand      = brand
-    @model      = model
-    @passengers = []
+  def initialize(number, name, ingredients, price)
+    @number = number
+    @name = name
+    @ingredients = ingredients
+    @price = price
   end
+end

@@ -1,4 +1,7 @@
 #pizza_delivery.rb
+require_relative "menu.rb"
+
+menu = Menu.new
 
 done = false
 
@@ -16,6 +19,7 @@ while not done
   case choice
     when 1
       puts "Let me show you the menu"
+      menu.print
     when 2
       done = true
     else
